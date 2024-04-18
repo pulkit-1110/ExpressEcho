@@ -80,12 +80,14 @@ Express Echo utilizes [TinyMCE](https://www.tiny.cloud/) as a real-time text edi
   <img src="https://drive.usercontent.google.com/download?id=1kue3troL_kwXh5xHWrccIHn9KQhUkiWk&authuser=0" height="400" width="200" alt="Home Page (Mobile Version)"/>
 </p>
 
+
 ### Explore Your Posts Page
 
 <p align="center">
   <img src="https://drive.usercontent.google.com/download?id=1XhzdsrYx3dxpBns41r-zrBHUAmmap-lV&authuser=0" height="400" width="500" alt="Explore Yours Posts Page"/>
   <img src="https://drive.usercontent.google.com/download?id=1kHv7szYXk-ro8yljJJ9eX2DNNv14g8il&authuser=0" height="400" width="200" alt="Explore Yours Posts Page (Mobile Version)"/>
 </p>
+
 
 ### Post Page
 
@@ -94,7 +96,6 @@ Express Echo utilizes [TinyMCE](https://www.tiny.cloud/) as a real-time text edi
   <img src="https://drive.usercontent.google.com/download?id=1kpzW7vsx50Gk8enj4kiHf7piiSE1st9P&authuser=0" height="400" width="200" alt="Post Page (Mobile Version)"/>
 </p>
 
-![Post Page](https://drive.usercontent.google.com/download?id=1JOCWgkATiKTNGTMLkZrkZeEyW1Eu1MkB&authuser=0)
 
 ### Edit Post Page
 
@@ -103,12 +104,14 @@ Express Echo utilizes [TinyMCE](https://www.tiny.cloud/) as a real-time text edi
   <img src="https://drive.usercontent.google.com/download?id=1kd_HonUGjNAjPHpC40mna2tJj1H7onWj&authuser=0" height="400" width="200" alt="Edit Post Page (Mobile Version)"/>
 </p>
 
+
 ### Add Post Page
 
 <p align="center">
   <img src="https://drive.usercontent.google.com/download?id=1nbsjl69bC7vb4PiyL_U8F2bwPeVJq_sy&authuser=0" height="400" width="500" alt="Edit Post Page"/>
   <img src="https://drive.usercontent.google.com/download?id=1kOMM6TdPUduxc7mriearHmv_z47-aXFD&authuser=0" height="400" width="200" alt="Edit Post Page (Mobile Version)"/>
 </p>
+
 
 ## Contributing
 
