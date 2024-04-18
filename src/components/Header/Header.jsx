@@ -75,7 +75,7 @@ function Header() {
           {/* Menu Items */}
           <div
             className={`md:h-auto transition-all duration-700 ease-in-out ${
-              menuOpen ? "h-20" : "opacity-0 h-1"
+              menuOpen ? "opacity-0 h-1" : "h-20"
             }`}
           >
             <ul className={`md:flex flex ml-auto`}>
