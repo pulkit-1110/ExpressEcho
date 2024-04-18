@@ -7,13 +7,17 @@ function ExploreYourPosts() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const userData = useSelector((state) => state.auth.userData);
+
   useEffect(() => {
-    appwriteService.getUserPosts(userData?.$id).then((posts) => {
-      if (posts) {
-        setPosts(posts.documents);
-        setLoading(false);
-      }
-    });
+    appwriteService
+      .getUserPosts(userData?.$id)
+      .then((posts) => {
+        if (posts) {
+          setPosts(posts.documents);
+          setLoading(false);
+        }
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   if (loading) {
@@ -33,7 +37,8 @@ function ExploreYourPosts() {
           <div className="flex flex-wrap min-h-60">
             <div className="p-2 w-full">
               <h1 className="text-2xl font-bold text-white text-center">
-                Create new posts by going to Add Post button
+                You haven't created any posts yet. Create one using the Add Post
+                button!
               </h1>
             </div>
           </div>
