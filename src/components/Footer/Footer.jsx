@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Logo from "../Logo";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import Logo from '../Logo'
 
 function Footer() {
   return (
@@ -19,7 +19,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-2/12">
+          {/* <div className="w-full p-6 md:w-1/2 lg:w-2/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-lightWhite">
                 Company
@@ -59,33 +59,33 @@ function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="w-full p-6 md:w-1/2 lg:w-2/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-lightWhite">
                 Support
               </h3>
               <ul>
-                <li className="mb-4">
+                {/* <li className="mb-4">
                   <Link
                     className="text-base font-medium duration-200 hover:text-blue-600 text-white"
                     to="/"
                   >
                     Account
                   </Link>
-                </li>
-                <li className="mb-4">
+                </li> */}
+                {/* <li className="mb-4">
                   <Link
                     className="text-base font-medium duration-200 hover:text-blue-600 text-white"
                     to="/"
                   >
                     Help
                   </Link>
-                </li>
+                </li> */}
                 <li className="mb-4">
                   <Link
                     className="text-base font-medium duration-200 hover:text-blue-600 text-white"
-                    to="/"
+                    to="/about-me"
                   >
                     Contact Us
                   </Link>
@@ -93,7 +93,7 @@ function Footer() {
                 <li>
                   <Link
                     className="text-base font-medium duration-200 hover:text-blue-600 text-white"
-                    to="/"
+                    to="/about-me"
                   >
                     Customer Support
                   </Link>
@@ -110,7 +110,7 @@ function Footer() {
                 <li className="mb-4">
                   <Link
                     className="text-base font-medium duration-200 hover:text-blue-600 text-white"
-                    to="/"
+                    to="/terms-and-conditions"
                   >
                     Terms &amp; Conditions
                   </Link>
@@ -118,7 +118,7 @@ function Footer() {
                 <li className="mb-4">
                   <Link
                     className="text-base font-medium duration-200 hover:text-blue-600 text-white"
-                    to="/"
+                    to="/privacy-policy"
                   >
                     Privacy Policy
                   </Link>
@@ -126,7 +126,7 @@ function Footer() {
                 <li>
                   <Link
                     className="text-base font-medium duration-200 hover:text-blue-600 text-white"
-                    to="/"
+                    to="/licensing"
                   >
                     Licensing
                   </Link>
@@ -137,7 +137,7 @@ function Footer() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

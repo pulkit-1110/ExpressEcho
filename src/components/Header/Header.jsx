@@ -1,45 +1,50 @@
-import React, { useState } from "react";
-import { Container, Logo, LogoutBtn } from "../index";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react'
+import { Container, Logo, LogoutBtn } from '../index'
+import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
 function Header() {
-  const authStatus = useSelector((state) => state.auth.status);
-  const navigate = useNavigate();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const authStatus = useSelector((state) => state.auth.status)
+  const navigate = useNavigate()
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+    setMenuOpen(!menuOpen)
+  }
 
   const navItems = [
     {
-      name: "Home",
-      slug: "/",
+      name: 'Home',
+      slug: '/',
       active: true,
     },
     {
-      name: "Login",
-      slug: "/login",
+      name: 'Login',
+      slug: '/login',
       active: !authStatus,
     },
     {
-      name: "Signup",
-      slug: "/signup",
+      name: 'Signup',
+      slug: '/signup',
       active: !authStatus,
     },
     {
-      name: "Explore Your Posts",
-      slug: "/explore-your-posts",
+      name: 'Explore Your Posts',
+      slug: '/explore-your-posts',
       active: authStatus,
     },
     {
-      name: "Add Post",
-      slug: "/add-post",
+      name: 'Add Post',
+      slug: '/add-post',
       active: authStatus,
     },
-  ];
+    {
+      name: 'About',
+      slug: '/about-me',
+      active: true,
+    },
+  ]
 
   return (
     <header className="py-1.5 shadow bg-purple sticky top-0 z-10 border border-b border-gray-900">
@@ -75,7 +80,7 @@ function Header() {
           {/* Menu Items */}
           <div
             className={`md:h-auto transition-all duration-700 ease-in-out ${
-              menuOpen ? "opacity-0 h-1" : "h-20"
+              menuOpen ? 'opacity-0 h-1' : 'h-20'
             }`}
           >
             <ul className={`md:flex flex ml-auto`}>
@@ -101,7 +106,7 @@ function Header() {
         </nav>
       </Container>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header

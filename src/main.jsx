@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
-import { Provider } from "react-redux";
-import store from "./store/store.js";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+import { Provider } from 'react-redux'
+import store from './store/store.js'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import {
   Home,
   AddPost,
@@ -12,20 +12,24 @@ import {
   EditPost,
   Post,
   ExploreYourPosts,
-} from "./pages";
-import { AuthLayout, Login } from "./components/";
+  AboutMe,
+  PrivacyPolicy,
+  TermsAndConditions,
+  Licensing,
+} from './pages'
+import { AuthLayout, Login } from './components/'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Home />,
       },
       {
-        path: "/login",
+        path: '/login',
         element: (
           <AuthLayout authentication={false}>
             <Login />
@@ -33,7 +37,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/signup",
+        path: '/signup',
         element: (
           <AuthLayout authentication={false}>
             <Signup />
@@ -41,44 +45,60 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/explore-your-posts",
+        path: '/explore-your-posts',
         element: (
           <AuthLayout authentication>
-            {" "}
+            {' '}
             <ExploreYourPosts />
           </AuthLayout>
         ),
       },
       {
-        path: "/add-post",
+        path: '/add-post',
         element: (
           <AuthLayout authentication>
-            {" "}
+            {' '}
             <AddPost />
           </AuthLayout>
         ),
       },
       {
-        path: "/edit-post/:slug",
+        path: '/about-me',
+        element: <AboutMe />,
+      },
+      {
+        path: '/privacy-policy',
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: '/terms-and-conditions',
+        element: <TermsAndConditions />,
+      },
+      {
+        path: '/licensing',
+        element: <Licensing />,
+      },
+      {
+        path: '/edit-post/:slug',
         element: (
           <AuthLayout authentication>
-            {" "}
+            {' '}
             <EditPost />
           </AuthLayout>
         ),
       },
       {
-        path: "/post/:slug",
+        path: '/post/:slug',
         element: <Post />,
       },
     ],
   },
-]);
+])
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>
-);
+)
