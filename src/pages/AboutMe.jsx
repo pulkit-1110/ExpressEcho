@@ -12,9 +12,6 @@ function AboutMe() {
         <p>
           <strong>Phone:</strong> {conf.phoneNumber}
         </p>
-        <p>
-          <strong>Address:</strong> {conf.address}
-        </p>
       </div>
     </div>
   )
